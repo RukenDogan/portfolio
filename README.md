@@ -24,4 +24,4 @@ Ce projet présente mes compétences, mes projets, et mes objectifs professionne
 
 ## Voir le portfolio
 
-[portfolio](https://rukendogan.github.io/portfolio/)
+[Lien vers le GitHub Pages](https://rukendogan.github.io/portfolio/)
