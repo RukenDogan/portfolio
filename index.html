@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ruken</title>
+    <!-- Polices -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome pour les logos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 🌸 Navbar -->
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 🌸 Header -->
+    <header>
+        <h1 id="typed-text"></h1>
+        <h2>En formation développeuse Full Stack</h2>
+        <!-- <button class="btn-scroll" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+            Voir mes projets
+        </button> -->
+    </header>
+
+    <!-- 🌸 À propos -->
+    <section id="about">
+        <h2 class="section-title">À propos</h2>
+
+        <p class="fade-in">Ayant toujours eu un attrait pour l’informatique, j’ai commencé à m’autoformer au
+            développement web front-end en 2019 en autodidacte.</p>
+
+        <p class="fade-in">Actuellement en formation de Développeur Full-Stack, je suis à la recherche d’un stage du
+            24/11/2025 au 31/03/2026 pour approfondir mes compétences.</p>
+        <br>
+        <p class="fade-in">💻 J’aime apprendre et explorer de nouvelles technologies<br>
+            🐍 Mon langage préféré : Python<br>
+            🔐 Intéressée aussi par la cybersécurité et les projets IoT</p>
+        <br>
+
+        <p class="fade-in">✨ Outils et technologies :</p>
+        <ul>
+            <li><strong>Développement Front-End :</strong> HTML, CSS, JavaScript</li>
+            <li>Développement Back-End : Python, PHP, NodeJS</li>
+            <li>Base de données : MySQL, MongoDB</li>
+            <li>IoT : Raspberry Pi</li>
+            <li>Outils : VSCode, GitHub, Postman, Wordpress</li>
+            <li>Méthodologies & Technologies : POO, MVC, API-REST</li>
+        </ul>
+        <br>
+        <p class="fade-in">✨ Mes objectifs :</p>
+        <ul>
+            <li>Approfondir mes compétences en Python</li>
+            <li>Développer des projets concrets en fullstack</li>
+            <li>Continuer à progresser en sécurité informatique et en IoT</li>
+        </ul>
+    </section>
+
+    <!-- 🌸 Projets -->
+    <section id="projects">
+        <h2 class="section-title">Mes Projets</h2>
+        <div class="projects-grid">
+
+            <div class="project-card fade-in">
+                <img src="images/screen.gif" alt="Space Invaders" class="project-img">
+                <h3>🎮 Space Invaders</h3>
+                <p>Un remake en Python du célèbre jeu rétro.</p>
+                <a href="https://github.com/RukenDogan/space_invaders" target="_blank">🔗 Voir le projet</a>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="images/projetiot.jpg" alt="Projet IoT" class="project-img">
+                <h3>📡 Projet IoT</h3>
+                <p>Projet IoT de santé connectée avec Raspberry Pi 4, capteur cardiaque biométrique (Fréquence Cardiaque et SpO2), capteur de mouvement, affichage sur écran OLED et alerte par email au medecin en cas d'anomalie.</p>
+                <a href="https://github.com/RukenDogan/projet-iot-Cardioberry" target="_blank">🔗 Voir le projet</a>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="images/meteo-app.png" alt="Application Météo" class="project-img">
+                <h3>☁️ Application Météo</h3>
+                <p>Une application mobile en React Native affichant la météo en temps réel via API.</p>
+                <a href="https://github.com/RukenDogan/app-meteo" target="_blank">🔗 Voir le projet</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 🌸 Contact -->
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-container fade-in">
+            <a href="mailto:ruken.dogan.rkn@gmail.com" class="contact-link" target="_blank">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+            <a href="https://github.com/RukenDogan" class="contact-link" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/ruken-dogan-84247435b/" class="contact-link" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+    </section>
+
+
+    <!-- 🌸 Footer -->
+    <footer>
+        © 2025 Ruken Dogan
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
