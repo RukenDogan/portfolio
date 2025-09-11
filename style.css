@@ -44,9 +44,10 @@ body {
   padding: 5px 10px;
   position: relative;
   transition: all 0.3s ease;
+  display: inline-block;
 }
 
-.nav-links a::after {
+/* .nav-links a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -60,12 +61,12 @@ body {
 .nav-links a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
-}
+} */
 
 .nav-links a:hover {
   color: #FBF3B9;
-  font-size: 1.1rem;
   text-decoration: none;
+  transform: scale(1.1);
 }
 
 /* ---- Header ---- */
@@ -76,6 +77,7 @@ header {
   align-items: center;
   justify-content: center;
   background: linear-gradient(120deg, #A8DADC, #CDB4DB);
+
   text-align: center;
   padding-top: 20px; /* espace pour navbar */
 }
@@ -83,7 +85,7 @@ header {
 h1 {
   font-family: 'Press Start 2P', cursive;
   font-size: 2rem;
-  color: #fff;
+  color: #ffff;
   margin-bottom: 20px;
 }
 
