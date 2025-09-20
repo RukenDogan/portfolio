@@ -2,8 +2,10 @@
 body {
   margin: 0;
   font-family: 'Nunito', sans-serif;
-  background-color: #FDF6F0;
-  color: #333;
+  /* background: linear-gradient(to bottom, #A8DADC, #CDB4DB, #FDF6F0); */
+  background: linear-gradient(135deg, rgba(15,32,39,0.95), rgba(32,58,67,0.95)),
+              url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+  color: #f0f0f0;
   scroll-behavior: smooth;
 }
 
@@ -13,7 +15,9 @@ body {
   top: 0;
   left: 0;
   width: 97%;
-  background: linear-gradient(120deg, #A8DADC, #CDB4DB);
+  /* background: linear-gradient(120deg, #A8DADC, #CDB4DB); */
+  background: transparent;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
@@ -21,6 +25,7 @@ body {
   z-index: 1;
   /* box-shadow: 0 3px 8px rgba(0,0,0,0.15); */
 }
+
 
 .logo {
   font-family: 'Press Start 2P', cursive;
@@ -47,24 +52,8 @@ body {
   display: inline-block;
 }
 
-/* .nav-links a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 100%;
-  height: 3px;
-  transition: transform 0.3s ease;
-  transform-origin: right;
-}
-
-.nav-links a:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-} */
-
 .nav-links a:hover {
-  color: #FBF3B9;
+  color: #ff4fa3;
   text-decoration: none;
   transform: scale(1.1);
 }
@@ -76,8 +65,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(120deg, #A8DADC, #CDB4DB);
-
+  /* background: linear-gradient(120deg, #A8DADC, #CDB4DB); */
   text-align: center;
   padding-top: 20px; /* espace pour navbar */
 }
@@ -91,7 +79,7 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  color: #444;
+  color: #b7b6b6;
 }
 
 /* ---- Bouton ---- */
@@ -122,11 +110,15 @@ section {
 .section-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 1.5rem;
-  color: #A8DADC;
+  color: #FFF;
   margin-bottom: 40px;
 }
 
 /* ---- Projets ---- */
+h3 {
+  color: #333;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -135,7 +127,7 @@ section {
 }
 
 .project-card {
-  background: #fff;
+  background: #EEEFE0;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -179,7 +171,8 @@ section {
 }
 
 .project-card a:hover {
-  background: #ff3385;
+  background: #ff4fa3;
+  text-decoration: none;
 }
 
 
@@ -196,7 +189,7 @@ a:hover {
 
 /* ---- Footer ---- */
 footer {
-  background: #B5EAD7;
+  background: transparent;
   padding: 20px;
   text-align: center;
   font-size: 0.9rem;
@@ -235,7 +228,8 @@ li {
 .contact-link {
     text-decoration: none;
     font-size: 1.2rem;
-    color: #333;
+    /* color: #333; */
+    color: #fff;
     transition: all 0.3s ease;
 }
 
@@ -278,7 +272,8 @@ li {
     position: absolute;
     top: 60px; /* hauteur navbar */
     right: 0;
-    background: linear-gradient(120deg, #A8DADC, #CDB4DB);
+    /* background: linear-gradient(120deg, #A8DADC, #CDB4DB); */
+    background: transparent;
     flex-direction: column;
     align-items: center;
     width: 100%;
