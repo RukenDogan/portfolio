@@ -27,7 +27,6 @@ body {
   backdrop-filter: blur(2px);
 }
 
-
 .logo {
   font-family: 'Press Start 2P', cursive;
   font-size: 1rem;
@@ -83,7 +82,7 @@ h2 {
   color: #fff;
 }
 
-/* ---- Bouton ---- */
+/* ---- Bouton ----
 .btn-scroll {
   background: #CDB4DB;
   color: #fff;
@@ -100,7 +99,7 @@ h2 {
 .btn-scroll:hover {
   background: #B5838D;
   transform: scale(1.05);
-}
+} */
 
 /* ---- Sections ---- */
 section {
@@ -115,6 +114,15 @@ section {
   /* color: #ffee00; jaune vif */
   margin-bottom: 40px;
 }
+
+.section-subtitle {
+    color: #ffbdde; /* ou #ff4fa3 selon ton rose */
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
 
 /* ---- Projets ---- */
 h3 {
@@ -229,6 +237,20 @@ li {
   margin-left: 0;
   list-style-type: none;
 }
+
+li.fade-in::before {
+  content: "▸";
+  color: #ff4fa3;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.separator {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 
 .contact-container {
     display: flex;
