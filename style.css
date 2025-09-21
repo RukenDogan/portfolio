@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: 'Nunito', sans-serif;
   /* background: linear-gradient(to bottom, #A8DADC, #CDB4DB, #FDF6F0); */
-  background: linear-gradient(135deg, rgba(15,32,39,0.95), rgba(32,58,67,0.95)),
+  background: linear-gradient(135deg, rgba(5,20,35,0.95), rgba(20,40,60,0.95)),
               url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
   color: #f0f0f0;
   scroll-behavior: smooth;
@@ -73,13 +73,14 @@ header {
 h1 {
   font-family: 'Press Start 2P', cursive;
   font-size: 2rem;
-  color: #ffff;
+  color: #ff4fa3;
   margin-bottom: 20px;
 }
 
 h2 {
   font-size: 1.5rem;
-  color: #fc99c9;
+  /* color: #fc99c9; */
+  color: #fff;
 }
 
 /* ---- Bouton ---- */
@@ -130,7 +131,10 @@ h3 {
   background: #EEEFE0;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
+  box-shadow: rgba(255, 20, 147, 0.4) 0px 3px 8px;
+
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
 }
