@@ -116,7 +116,8 @@ section {
 .section-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 1.5rem;
-  color: #ff4fa3;
+  color: #ffd166;
+  /* color: #ffee00; jaune vif */
   margin-bottom: 40px;
 }
 
@@ -127,21 +128,23 @@ h3 {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 20px;
 }
 
 .project-card {
-  background: #EEEFE0;
+  min-height: 400px;
+  background: #F7F4EA;
   border-radius: 16px;
+  border: 3px solid #ff4fa3;
+  border-radius: 4px;
+  /* background: rgba(238, 239, 224, 0.9); */
   overflow: hidden;
-  /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
   box-shadow: rgba(255, 20, 147, 0.4) 0px 3px 8px;
-
-
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
+  padding-bottom: 15px;
 }
 
 .project-card:hover {
@@ -168,21 +171,23 @@ h3 {
 }
 
 .project-card a {
-  display: inline-block;
-  margin: 15px 0 20px;
-  padding: 8px 14px;
-  border-radius: 8px;
-  text-decoration: none;
   background: #ff69b4;
+  border: 2px solid #ff4fa3;
+  border-radius: 4px;
+  padding: 8px 14px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
   color: #fff;
-  font-weight: bold;
-  transition: background 0.3s ease;
+
 }
 
 .project-card a:hover {
   background: #ff4fa3;
+  transform: scale(1.05);
   text-decoration: none;
-}
+} 
+
+
 
 
 /* ---- Liens ---- */
@@ -202,6 +207,7 @@ footer {
   padding: 20px;
   text-align: center;
   font-size: 0.9rem;
+  box-shadow: 0 -8px 20px rgba(0,0,0,0.15);
 }
 
 /* ---- Animations ---- */
