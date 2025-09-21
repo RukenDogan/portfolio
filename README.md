@@ -1,4 +1,4 @@
-# 🌸 WIP de Mon Portfolio
+# 🌸 Mon Portfolio
 
 Dépôt de mon **portfolio** 🚀  
 Ce projet présente mes compétences, mes projets, et mes objectifs professionnels.
@@ -24,4 +24,4 @@ Ce projet présente mes compétences, mes projets, et mes objectifs professionne
 
 ## Voir le portfolio
 
-[Lien vers le GitHub Pages](https://rukendogan.github.io/portfolio/)
+[Visiter mon Portfolio](https://rukendogan.github.io/portfolio/)
