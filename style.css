@@ -116,17 +116,19 @@ section {
 }
 
 .section-subtitle {
-    color: #ffbdde; /* ou #ff4fa3 selon ton rose */
+    color: #ffbdde;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 10px 0;
     text-align: center;
+    font-family: 'Press Start 2P', cursive;
 }
 
 
 /* ---- Projets ---- */
-h3 {
+h4 {
   color: #333;
+  font-size: 1.3rem;
 }
 
 .projects-grid {
@@ -224,6 +226,32 @@ footer {
   transform: translateY(0);
 }
 
+.icons {
+  display: flex;
+  gap: 15px;
+  margin: 35px 0 35px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.icons img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0px 0px 5px #ff4fa3);
+}
+
+h3 {
+
+  font-size: 0.9rem;
+  color: #FFEFA7;
+  margin-bottom: 10px;
+}
+
 #about-text {
   width: 60%;
 }
@@ -251,21 +279,8 @@ li.fade-in::before {
   color: rgba(255, 255, 255, 0.6);
   transition: transform 0.5s ease;
   animation: float 3s ease-in-out infinite alternate;
+  margin: 30px 0 30px 0;
 }
-
-
-@keyframes float {
-  0% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-5px) rotate(-2deg);
-  }
-  100% {
-    transform: translateY(0) rotate(2deg);
-  }
-}
-
 
 .contact-container {
     display: flex;
@@ -307,6 +322,19 @@ li.fade-in::before {
   list-style: none;
   display: flex;
   gap: 25px;
+}
+
+/* Animations séparateurs */
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(-2deg);
+  }
+  100% {
+    transform: translateY(0) rotate(2deg);
+  }
 }
 
 /* Version mobile */
