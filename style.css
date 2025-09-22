@@ -264,6 +264,17 @@ li.fade-in::before {
   margin: 30px 0 30px 0;
 }
 
+#formation {
+  margin: 70px 0 90px 0;
+}
+
+#formation .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem; /* un peu moins que projets */
+    margin-top: 20px;
+}
+
 .contact-container {
     display: flex;
     justify-content: center;
@@ -361,4 +372,78 @@ li.fade-in::before {
     font-size: 1rem;
   }
   
+}
+
+
+/* ---- Partie formation ---- */
+#formation .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 20px;
+}
+
+#formation .project-card {
+    min-height: 100px;
+    background: transparent;
+    border: 1px solid #ff4fa3;
+    border-radius: 8px;
+    box-shadow: none;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+#formation .project-card:hover {
+    transform: translateY(-2px);
+    border-color: #ff69b4;
+}
+
+#formation .project-card img.project-img {
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+}
+
+#formation .project-card h4 {
+    margin: 5px 0 3px 3px;
+    font-size: 0.85rem;
+    color: #fff;
+}
+
+#formation .project-card p {
+    font-size: 0.75rem;
+    color: #ddd;
+    margin: 2px 0;
+}
+
+#formation .project-card a {
+    font-family: nunito, sans-serif;
+    font-size: 0.8rem;
+    color: #ff4fa3;
+    background-color: transparent;
+
+    border: none;
+    align-items: center;
+}
+
+#formation .project-card a:hover {
+    color: rgb(252, 252, 188);
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #formation .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #formation .project-card img.project-img {
+        width: 70px;
+        height: 70px;
+    }
 }
