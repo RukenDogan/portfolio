@@ -33,3 +33,21 @@ const navLinks = document.getElementById("nav-links");
 burger.addEventListener("click", () => {
   navLinks.classList.toggle("open");
 });
+
+
+// Slider images
+const slides = document.querySelectorAll('.slider img');
+let current = 0;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.style.opacity = i === index ? '1' : '0';
+  });
+}
+
+showSlide(current);
+
+setInterval(() => {
+  current = (current + 1) % slides.length;
+  showSlide(current);
+}, 2000);
