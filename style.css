@@ -3,8 +3,8 @@ body {
   margin: 0;
   font-family: 'Nunito', sans-serif;
   background: linear-gradient(135deg, rgba(5, 20, 35, 0.95), rgba(20, 40, 60, 0.95)),
-    url('https://www.transparenttextures.com/patterns/3px-tile.png');
-        /* url('https://pixeljoint.com/files/icons/full/nebula2_02.gif'); */
+      url('https://pixeljoint.com/files/icons/full/nebula2_02.gif');
+      /* url('https://www.transparenttextures.com/patterns/3px-tile.png'); */
   background-size: auto;
   background-blend-mode: overlay;
   color: #f0f0f0;
@@ -24,7 +24,8 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 8px rgba(107, 106, 106, 0.15);
+  /* box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); */
   backdrop-filter: blur(2px);
 }
 
@@ -272,7 +273,8 @@ footer {
   padding: 20px;
   text-align: center;
   font-size: 0.9rem;
-  box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 -8px 20px rgba(107, 106, 106, 0.15);
+  /* box-shadow: 0 -8px 20px rgba(107, 106, 106, 0.15); */
 }
 
 /* ---- Animations ---- */
