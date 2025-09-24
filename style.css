@@ -137,13 +137,6 @@ li.fade-in::before {
   margin-left: -1em;
 }
 
-.separator {
-  color: rgba(255, 255, 255, 0.6);
-  transition: transform 0.5s ease;
-  animation: float 3s ease-in-out infinite alternate;
-  margin: 90px 0 90px 0;
-}
-
 
 /* ---- 🌸 Partie formation 🌸 ---- */
 #formation .projects-grid {
@@ -403,6 +396,15 @@ footer {
   list-style: none;
   display: flex;
   gap: 25px;
+}
+
+
+
+.separator {
+  color: rgba(255, 255, 255, 0.6);
+  transition: transform 0.5s ease;
+  animation: float 3s ease-in-out infinite alternate;
+  margin: 90px 0 90px 0;
 }
 
 
