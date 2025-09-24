@@ -11,7 +11,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* ---- Navbar ---- */
+/* ---- 🌸 Navbar 🌸 ---- */
 .navbar {
   position: fixed;
   top: 0;
@@ -59,7 +59,7 @@ body {
   transform: scale(1.1);
 }
 
-/* ---- Header ---- */
+/* ---- 🌸 Header 🌸 ---- */
 header {
   height: 100vh;
   display: flex;
@@ -83,7 +83,7 @@ h2 {
   color: #fff;
 }
 
-/* ---- Sections ---- */
+/* ---- 🌸 A propos 🌸 ---- */
 section {
   padding: 10px 20px;
   text-align: center;
@@ -106,7 +106,46 @@ section {
   font-family: 'Press Start 2P', cursive;
 }
 
-/* ---- Partie formation ---- */
+h3 {
+
+  font-size: 0.9rem;
+  color: #FFEFA7;
+  margin-bottom: 10px;
+}
+
+#about-text {
+  width: 60%;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  text-align: center;
+  margin-left: 0;
+  list-style-type: none;
+}
+
+/* Puces */
+li.fade-in::before {
+  content: "▸";
+  color: #ff4fa3;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.separator {
+  color: rgba(255, 255, 255, 0.6);
+  transition: transform 0.5s ease;
+  animation: float 3s ease-in-out infinite alternate;
+  margin: 90px 0 90px 0;
+}
+
+
+/* ---- 🌸 Partie formation 🌸 ---- */
 #formation .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -166,6 +205,17 @@ section {
   text-decoration: none;
 }
 
+#formation {
+  margin: 70px 0 90px 0;
+}
+
+#formation .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 20px;
+}
+
 /* ---- Slider images ---- */
 .slider {
     width: 50px;
@@ -188,7 +238,7 @@ section {
 
 
 
-/* ---- Projets ---- */
+/* ---- 🌸 Projets 🌸 ---- */
 h4 {
   color: #333;
   font-size: 1.3rem;
@@ -254,7 +304,6 @@ h4 {
   text-decoration: none;
 }
 
-
 /* ---- Liens ---- */
 a {
   color: #F4A9A8;
@@ -266,15 +315,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ---- Footer ---- */
-footer {
-  background: transparent;
-  padding: 20px;
-  text-align: center;
-  font-size: 0.9rem;
-  box-shadow: 0 -8px 20px rgba(107, 106, 106, 0.15);
-  /* box-shadow: 0 -8px 20px rgba(107, 106, 106, 0.15); */
-}
 
 /* ---- Animations ---- */
 .fade-in {
@@ -309,56 +349,8 @@ footer {
   filter: drop-shadow(0px 0px 5px #ff4fa3);
 }
 
-h3 {
 
-  font-size: 0.9rem;
-  color: #FFEFA7;
-  margin-bottom: 10px;
-}
-
-#about-text {
-  width: 60%;
-}
-
-ul {
-  padding-left: 0;
-}
-
-li {
-  text-align: center;
-  margin-left: 0;
-  list-style-type: none;
-}
-
-/* Puces */
-li.fade-in::before {
-  content: "▸";
-  color: #ff4fa3;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-.separator {
-  color: rgba(255, 255, 255, 0.6);
-  transition: transform 0.5s ease;
-  animation: float 3s ease-in-out infinite alternate;
-  margin: 90px 0 90px 0;
-}
-
-#formation {
-  margin: 70px 0 90px 0;
-}
-
-#formation .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  /* un peu moins que projets */
-  margin-top: 20px;
-}
-
+/* ---- 🌸 Contact 🌸 ---- */
 .contact-container {
   display: flex;
   justify-content: center;
@@ -384,6 +376,18 @@ li.fade-in::before {
   text-decoration: none;
 }
 
+
+/* ---- 🌸 Footer 🌸 ---- */
+footer {
+  background: transparent;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  box-shadow: 0 -8px 20px rgba(107, 106, 106, 0.15);
+  /* box-shadow: 0 -8px 20px rgba(107, 106, 106, 0.15); */
+}
+
+
 /* ---- Navbar mobile ---- */
 .burger {
   display: none;
@@ -401,6 +405,7 @@ li.fade-in::before {
   gap: 25px;
 }
 
+
 /* Animations séparateurs */
 @keyframes float {
   0% {
@@ -415,6 +420,7 @@ li.fade-in::before {
     transform: translateY(0) rotate(2deg);
   }
 }
+
 
 /* Version mobile */
 @media (max-width: 768px) {
