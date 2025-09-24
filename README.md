@@ -3,6 +3,8 @@
 Dépôt de mon **portfolio** 🚀  
 Ce projet présente mes compétences, mes projets, et mes objectifs professionnels.
 
+[Visiter mon Portfolio](https://rukendogan.github.io/portfolio/)
+
 ---
 
 ## ✨ Fonctionnalités
@@ -21,7 +23,3 @@ Ce projet présente mes compétences, mes projets, et mes objectifs professionne
 - **Font Awesome** (icônes)  
 
 ---
-
-## Voir le portfolio
-
-[Visiter mon Portfolio](https://rukendogan.github.io/portfolio/)
