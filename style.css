@@ -3,8 +3,8 @@ body {
   margin: 0;
   font-family: 'Nunito', sans-serif;
   background: linear-gradient(135deg, rgba(5, 20, 35, 0.95), rgba(20, 40, 60, 0.95)),
-    url('https://pixeljoint.com/files/icons/full/nebula2_02.gif');
-    /* url('https://www.transparenttextures.com/patterns/3px-tile.png'); */
+    url('https://www.transparenttextures.com/patterns/3px-tile.png');
+        /* url('https://pixeljoint.com/files/icons/full/nebula2_02.gif'); */
   background-size: auto;
   background-blend-mode: overlay;
   color: #f0f0f0;
