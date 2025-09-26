@@ -51,3 +51,62 @@ setInterval(() => { // Changer d’image toutes les 2 secondes
   current = (current + 1) % slides.length; // Incrémenter l’index, revenir au début si nécessaire
   showSlide(current); // Afficher l’image courante
 }, 2000); // Intervalle de 2 secondes
+
+
+// Formulaire de contact
+window.addEventListener("DOMContentLoaded", () => { // Ajouter un écouteur d’événement au chargement de la page
+  const form = document.getElementById("contact-form"); // Sélectionner le formulaire
+  const status = document.getElementById("form-status"); // Sélectionner le statut
+
+  if (!form || !status) return; // Si le formulaire ou le statut n’existe pas, arrêter l’exécution
+
+  form.addEventListener("submit", async (e) => { // Ajouter un écouteur d’événement au submit
+    e.preventDefault(); // Empêcher le comportement par défaut du formulaire (soumission)
+
+    const name = form.elements["name"].value.trim(); // Récupérer et nettoyer les valeurs des champs
+    const email = form.elements["email"].value.trim(); 
+    const message = form.elements["message"].value.trim();
+
+    if (!name || !email || !message) { // Vérifier que tous les champs sont remplis
+      status.style.color = "red"; // Changer la couleur du statut en rouge
+      status.textContent = "Merci de remplir tous les champs."; // Afficher un message d’erreur
+      status.classList.add("show"); // Afficher le statut
+      return; // Arrêter l’exécution
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Expression régulière pour valider l’email
+    if (!emailRegex.test(email)) { // Si l’email n’est pas valide
+      status.style.color = "red"; // Changer la couleur du statut en rouge
+      status.textContent = "Merci de saisir un email valide."; // Afficher un message d’erreur
+      status.classList.add("show"); // Afficher le statut
+      return; // Arrêter l’exécution
+    }
+
+    const data = new FormData(form); // Créer un objet FormData avec les données du formulaire
+    try { // Essayer de soumettre le formulaire
+      const response = await fetch(form.action, { // Envoyer une requête HTTP avec le formulaire
+        method: form.method, // Méthode de soumission
+        body: data, // Données du formulaire
+        headers: { 'Accept': 'application/json' } // En-têtes HTTP pour accepter JSON
+      });
+
+      if (response.ok) { // Si la réponse est OK
+        status.style.color = "lightgreen"; // Changer la couleur du statut en vert
+        status.textContent = "Message envoyé ! Merci 😊"; // Afficher un message de confirmation
+        status.classList.add("show"); // Afficher le statut
+        form.reset(); // Réinitialiser le formulaire
+      } else {
+        throw new Error("Erreur réseau"); // Si la réponse n’est pas OK, générer une erreur
+      }
+    } catch (error) { // Si une erreur survient
+      status.style.color = "red"; // Changer la couleur du statut en rouge
+      status.textContent = "Erreur lors de l'envoi. Réessayez plus tard."; // Afficher un message d’erreur
+      status.classList.add("show"); // Afficher le statut
+    }
+
+    setTimeout(() => { // Retirer le statut après 5 secondes
+      status.classList.remove("show"); // Cacher le statut
+    }, 5000); // Intervalle de 5 secondes
+
+  });
+});

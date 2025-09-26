@@ -30,9 +30,9 @@
     <!-- 🌸 Header 🌸 -->
     <header>
         <!-- <div class="profile-container"> -->
-            <h1 id="typed-text"></h1>
-            <h2>En formation développeuse Full Stack</h2>
-            <!-- <a href="https://github.com/RukenDogan" class="contact-link" target="_blank">
+        <h1 id="typed-text"></h1>
+        <h2>En formation développeuse Full Stack</h2>
+        <!-- <a href="https://github.com/RukenDogan" class="contact-link" target="_blank">
                 <i class="fab fa-github"></i>
             </a>
             <a href="images-docs/CV_Ruken.pdf" target="_blank" class="contact-link">
@@ -49,7 +49,7 @@
 
     <!-- 🌸 À propos 🌸 -->
     <section id="about">
-        <h2 class="section-title">À propos</h2>
+        <h2 class="fade-in section-title">À propos</h2>
 
         <p class="fade-in" id="about-text">Ayant toujours eu un attrait pour l’informatique, j’ai commencé à
             m’autoformer au
@@ -130,7 +130,7 @@
 
     <!-- 🌸 Formation 🌸 -->
     <section id="formation">
-        <h2 class="section-title">Formation</h2>
+        <h2 class="fade-in section-title">Formation</h2>
         <div class="projects-grid">
 
             <div class="project-card fade-in">
@@ -175,7 +175,7 @@
 
     <!-- 🌸 Projets 🌸 -->
     <section id="projects">
-        <h2 class="section-title">Mes Projets</h2>
+        <h2 class="fade-in section-title">Mes Projets</h2>
         <div class="projects-grid">
 
             <div class="project-card fade-in">
@@ -237,23 +237,35 @@
     <br>
     <!-- 🌸 Contact 🌸 -->
     <section id="contact">
-        <h2 class="section-title">Contact</h2>
+        <h2 class="fade-in section-title">Contact</h2>
         <div class="contact-container fade-in">
-            <a href="mailto:ruken.dogan.rkn@gmail.com" class="contact-link" target="_blank">
-                <i class="fas fa-envelope"></i> Email
-            </a>
-            <a href="https://github.com/RukenDogan" class="contact-link" target="_blank">
-                <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/ruken-d-84247435b/" class="contact-link" target="_blank">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
+            
+            <div class="icons-row">
+                <a href="mailto:ruken.dogan.rkn@gmail.com" class="contact-link" target="_blank">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="https://github.com/RukenDogan" class="contact-link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/ruken-d-84247435b/" class="contact-link" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
 
-            <a href="images-docs/CV_Ruken.pdf" target="_blank" class="contact-link">
-                <i class="fa-regular fa-file-pdf"></i> Mon CV
-            </a>
+                <a href="images-docs/CV_Ruken.pdf" target="_blank" class="contact-link">
+                    <i class="fa-regular fa-file-pdf"></i> Mon CV
+                </a>
+            </div>
 
+            <form id="contact-form" class="fade-in" action="https://formspree.io/f/xyznkgnq" method="POST">
+                <p>Ou utilisez le formulaire ci-dessous pour me contacter :</p>
+                <input type="text" name="name" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <textarea name="message" placeholder="Votre message" required></textarea>
+                <button type="submit"><i class="fa-solid fa-paper-plane"></i> Envoyer</button>
+                <p id="form-status"></p>
+            </form>
         </div>
+
     </section>
     <br>
     <br>

@@ -96,12 +96,13 @@ section {
   text-align: center;
 }
 
-.section-title {
+.fade-in.section-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 1.5rem;
   color: #ffd166;
   /* color: #ffee00; jaune vif */
   margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .section-subtitle {
@@ -352,11 +353,28 @@ a:hover {
 
 
 /* ---- 🌸 Contact 🌸 ---- */
+
 .contact-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 2rem;
-  margin-top: 20px;
+}
+
+.icons-row {
+  display: flex;
+  gap: 45px;
+  margin: 35px 0 5px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.icons-row a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
 }
 
 .contact-link {
@@ -376,6 +394,64 @@ a:hover {
   transform: scale(1.1);
   text-decoration: none;
 }
+
+
+/* ---- Formulaire ---- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: rgba(0,0,0,0.5);
+  padding: 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  width: 90%;
+  max-width: 400px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  padding: 10px;
+  font-size: 1rem;
+  background: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+button:hover {
+  background: #ff4fa3;
+}
+
+#form-status {
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: opacity 0.5s ease, color 0.5s ease;
+  transform: translateY(-10px);
+}
+
+#form-status.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 /* ---- 🌸 Footer 🌸 ---- */
@@ -413,7 +489,7 @@ footer {
   transition: transform 0.5s ease;
   animation: float 3s ease-in-out infinite alternate;
   margin: 90px 0 90px 0;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 
@@ -479,6 +555,10 @@ footer {
 
   .contact-link {
     font-size: 1rem;
+  }
+
+  .icons-row {
+    gap: 20px;
   }
 
 }
