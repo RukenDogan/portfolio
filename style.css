@@ -397,6 +397,11 @@ a:hover {
 
 
 /* ---- Formulaire ---- */
+
+.form-intro {
+  color: #ffbdde
+}
+
 form {
   display: flex;
   flex-direction: column;
