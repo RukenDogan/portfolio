@@ -397,16 +397,16 @@ a:hover {
 
 
 /* ---- Formulaire ---- */
-
 .form-intro {
-  color: #ffbdde
+  color: #ffbdde;
+  font-weight: bold;
 }
 
 form {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  background: rgba(0,0,0,0.5);
+  /* background: rgba(0,0,0,0.5); */
   padding: 30px;
   border-radius: 12px;
   backdrop-filter: blur(5px);
