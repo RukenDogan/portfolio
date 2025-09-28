@@ -566,4 +566,8 @@ footer {
     gap: 20px;
   }
 
+  form {
+    max-width: 290px;
+  }
+
 }
