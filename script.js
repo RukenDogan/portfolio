@@ -1,15 +1,21 @@
-// Effet texte qui s’écrit
+// Effet texte qui s’écrit avec loader si le texte est long à charger
 const text = "Ruken Dogan"; // Texte à afficher
-let index = 0; // Index de la lettre en cours
+const target = document.getElementById("typed-text"); // Élément cible pour l’effet texte
+const loader = document.getElementById("text-loader"); // Élément loader
+let i = 0; // Index de la lettre en cours
 
 function typeWriter() { // Fonction qui écrit le texte
-  if (index < text.length) { // Si l’index est inférieur à la longueur du texte
-    document.getElementById("typed-text").innerHTML += text.charAt(index); // Ajouter la lettre à l’élément
-    index++; // Incrémenter l’index
+  if (i === 0) { // Si c’est la première lettre
+    loader.style.display = "none"; // Cacher le loader
+  }
+
+  if (i < text.length) { // Si l’index est inférieur à la longueur du texte
+    target.textContent += text.charAt(i); // Ajouter la lettre à l’élément
+    i++; // Incrémenter l’index
     setTimeout(typeWriter, 80); // Appeler la fonction après un délai
   }
 }
-window.onload = typeWriter; // Appeler la fonction au chargement de la page
+typeWriter(); // Appeler la fonction au chargement de la page
 
 
 // Animation fade-in au scroll
