@@ -304,7 +304,6 @@ h4 {
   font-family: 'Press Start 2P', cursive;
   font-size: 10px;
   color: #fff;
-
 }
 
 .project-card a:hover {
@@ -569,6 +568,11 @@ footer {
   .projects-grid {
     grid-template-columns: 1fr;
   }
+
+  #projects .projects-grid .project-card:last-child {
+    grid-column: auto;
+  }
+  
 
   #about-text {
     width: 100%;
