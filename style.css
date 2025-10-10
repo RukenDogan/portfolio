@@ -150,7 +150,7 @@ li.fade-in::before {
 }
 
 
-/* ---- 🌸 Partie formation 🌸 ---- */
+/* ---- 🌸 Formation 🌸 ---- */
 #formation .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
