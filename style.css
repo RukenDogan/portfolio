@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: 'Nunito', sans-serif;
   background: linear-gradient(135deg, rgba(5, 20, 35, 0.95), rgba(20, 40, 60, 0.95)),
-      url('https://pixeljoint.com/files/icons/full/nebula2_02.gif');
+      url('images-docs/nebula_bg.png');
       /* url('https://www.transparenttextures.com/patterns/3px-tile.png'); */
   background-size: auto;
   background-blend-mode: overlay;
@@ -332,6 +332,7 @@ a:hover {
   font-family: 'Press Start 2P', 'cursive';
   animation: blink 0.8s infinite alternate;
 }
+
 @keyframes blink { 
   from {opacity: 0.2;} to {opacity: 1;} 
 }
