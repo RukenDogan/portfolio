@@ -116,11 +116,10 @@ section {
   font-family: 'Press Start 2P', cursive;
 }
 
-h3 {
-
+h3.fade-in {
   font-size: 0.9rem;
   color: #FFEFA7;
-  margin-bottom: 10px;
+  margin: 40px 0 15px 0;
 }
 
 #about-text {
@@ -153,7 +152,6 @@ li.fade-in::before {
   /* margin-left: -1em; */
   margin-bottom: 4px;
 }
-
 
 
 /* ---- 🌸 Formation 🌸 ---- */
@@ -291,15 +289,16 @@ h4 {
   border-bottom: 1px solid #eee;
 }
 
-.project-card h3 {
-  margin: 15px 0 10px;
-  font-size: 1.2rem;
+.project-card h4 {
+  margin: 25px 0;
+  font-size: 1.3rem;
 }
 
 .project-card p {
-  padding: 0 15px;
+  padding: 0 15px 15px 15px;
   font-size: 0.95rem;
   color: #555;
+
 }
 
 .project-card a {
@@ -358,11 +357,10 @@ a:hover {
 
 .icons {
   display: flex;
-  gap: 15px;
-  margin: 35px 0 35px 0;
+  gap: 25px;
+  /* margin: 35px 0 35px 0; */
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 15px;
 }
 
 .icons img {
