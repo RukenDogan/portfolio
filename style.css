@@ -561,6 +561,23 @@ footer {
     backdrop-filter: blur(2px);
   }
 
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .fade-in.section-title {
+    font-size: 1.4rem;
+
+  }
+
+  .section-subtitle {
+    font-size: 0.9rem;
+  }
+
   #formation .projects-grid {
     grid-template-columns: 1fr;
   }
