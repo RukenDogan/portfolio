@@ -289,6 +289,22 @@ h4 {
   border-bottom: 1px solid #eee;
 }
 
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .project-card h4 {
   margin: 25px 0;
   font-size: 1.3rem;
@@ -315,6 +331,13 @@ h4 {
   background: #ff4fa3;
   transform: scale(1.05);
   text-decoration: none;
+}
+
+.project-card .tech-stack {
+  font-size: 0.8rem;
+  color: #07035d;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 
